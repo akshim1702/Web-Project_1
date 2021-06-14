@@ -1,0 +1,105 @@
+body{
+    height: 100%;
+    width: 100%;
+}
+header{
+   display: block;
+    position: fixed;
+    width: 100%;
+    /* margin-left: -7px; */
+    margin: -8px;
+}
+.brocode{
+    font-family: cursive;
+    text-align: center;
+    list-style: none;
+    
+}
+.part3{
+    height: 563px;
+    border: 2px solid red;
+
+}
+
+#part3-head{
+    text-align: center;
+    text-decoration: underline;
+    padding-left: 30px;
+    border: orangered;
+    font-size: 3rem;
+    margin-top: 2px;
+
+}
+.part3-div{
+    color: rgb(17, 56, 184);
+    /* background-color: rgb(16, 154, 218); */
+    border:2px solid rgb(189, 192, 6);
+}
+.navbar{
+    border: rgb(179, 117, 117);
+    background-color: rgb(179, 117, 117);
+    padding: 2px 3px;
+    /* border-radius: 50px; */
+}
+.navigation{
+    text-decoration: none;
+    color: black;
+}
+.brother{
+    display: flex;
+    justify-content: center;
+}
+.item{
+    padding: 2px 33px;
+    list-style: none;
+    color: rgb(15, 1, 1);
+    
+}
+a:hover{
+    color: rgb(16, 154, 218);
+    text-decoration: underline;
+    
+}
+.Section
+{
+    background-image: url("/img/back-img.jpg");
+    background-size: 101% 164%;
+    /* border: 2px solid red; */
+    height: 358px;
+    padding-right: 55px;
+    padding-top: 55px;
+    background-repeat: no-repeat;
+    
+}
+.heading{
+    font-size: 28px;
+}
+.h2{
+    padding-top: 3px;
+    line-height: 1.8;
+    margin-top: -14px;
+    font-size: 32px;
+    font-family: 'Baloo Tammudu 2', cursive;
+}
+.h1{
+    padding-bottom: 2px;
+    margin-bottom: 3px;
+    font-family: monospace;
+}
+.quote{
+    padding-left: 1036px;
+    
+}
+.part4{
+    border: 2px solid black;
+    /* background: burlywood; */
+    margin-top: 80px;
+}
+.part4-head{
+    color: rgb(218, 223, 240);
+    background-color: rgb(16, 154, 218);
+    border:2px solid rgb(189, 192, 6); 
+    text-decoration: underline;
+    padding-left: 30px;    
+    margin-top: 52px;
+}
