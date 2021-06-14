@@ -1,13 +1,18 @@
 body{
     height: 100%;
     width: 100%;
+   
 }
 header{
    display: block;
     position: fixed;
     width: 100%;
     /* margin-left: -7px; */
-    margin: -8px;
+    margin-top: -8px;
+
+}
+.container{
+    width: 100%;
 }
 .brocode{
     font-family: cursive;
@@ -16,9 +21,10 @@ header{
     
 }
 .part3{
-    height: 563px;
+    height: 100%;
+    width: 100%;
     border: 2px solid red;
-
+    /* margin: auto; */
 }
 
 #part3-head{
@@ -28,18 +34,13 @@ header{
     border: orangered;
     font-size: 3rem;
     margin-top: 2px;
-
-}
-.part3-div{
-    color: rgb(17, 56, 184);
-    /* background-color: rgb(16, 154, 218); */
-    border:2px solid rgb(189, 192, 6);
 }
 .navbar{
     border: rgb(179, 117, 117);
     background-color: rgb(179, 117, 117);
     padding: 2px 3px;
     /* border-radius: 50px; */
+   
 }
 .navigation{
     text-decoration: none;
@@ -63,7 +64,7 @@ a:hover{
 .Section
 {
     background-image: url("/img/back-img.jpg");
-    background-size: 101% 164%;
+    /* background-size: 101% 164%; */
     /* border: 2px solid red; */
     height: 358px;
     padding-right: 55px;
@@ -91,15 +92,36 @@ a:hover{
     
 }
 .part4{
-    border: 2px solid black;
-    /* background: burlywood; */
-    margin-top: 80px;
+    display: flex;
+    border: 2px solid red;
+    padding: 28px 3px;
+    margin: 118px;
+    background-color: tomato;
+    flex-wrap: wrap;
 }
-.part4-head{
-    color: rgb(218, 223, 240);
-    background-color: rgb(16, 154, 218);
-    border:2px solid rgb(189, 192, 6); 
-    text-decoration: underline;
-    padding-left: 30px;    
-    margin-top: 52px;
+
+.part4-body{
+    padding-left: 265px;
+    
+}
+.create{
+    padding-left: 200px;
+}
+.name2{
+    padding-left: 107px;
+}
+#submit-button{
+    border-radius: 5px;
+    border: 2px solid red;
+    color: salmon;
+}
+#submit-button:hover{
+    color: skyblue;
+    cursor: pointer;
+}
+select{
+    cursor: pointer;
+    font-family: cursive;
+    color: teal;
+    background-color: violet;
 }
