@@ -1,7 +1,7 @@
 body{
     height: 100%;
     width: 100%;
-   
+   overflow-x: hidden;
 }
 header{
    display: block;
@@ -63,9 +63,8 @@ a:hover{
 }
 .Section
 {
-    background-image: url("/img/back-img.jpg");
-    /* background-size: 101% 164%; */
-    /* border: 2px solid red; */
+    background: url("/img/back-img.jpg") no-repeat center center/cover;
+    border: 2px solid red;
     height: 358px;
     padding-right: 55px;
     padding-top: 55px;
@@ -109,6 +108,7 @@ a:hover{
 }
 .name2{
     padding-left: 107px;
+    font-family: cursive;
 }
 #submit-button{
     border-radius: 5px;
