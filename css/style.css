@@ -1,33 +1,40 @@
-body{
+body {
     height: 100%;
     width: 100%;
-    overflow-x: hidden;
+    margin: 0%;
 }
-header{
-   display: block;
+
+header {
+    display: block;
     position: fixed;
     width: 100%;
-    /* margin-left: -7px; */
-    margin-top: -8px;
-
 }
-.container{
+
+.container {
     width: 100%;
 }
-.brocode{
+
+.brocode {
     font-family: cursive;
     text-align: center;
     list-style: none;
-    
 }
-.part3{
+
+.part3 {
     height: 100%;
     width: 100%;
     border: 2px solid red;
-    /* margin: auto; */
 }
 
-#part3-head{
+.part3::before {
+    background: url("https://source.unsplash.com/random") no-repeat center center/cover;
+    content: "";
+    /* position: absolute; */
+    opacity: 0.5;
+    z-index: -1;
+}
+
+#part3-head {
     text-align: center;
     text-decoration: underline;
     padding-left: 30px;
@@ -35,93 +42,127 @@ header{
     font-size: 3rem;
     margin-top: 2px;
 }
-.navbar{
+
+.navbar {
     border: rgb(179, 117, 117);
     background-color: rgb(179, 117, 117);
     padding: 2px 3px;
     /* border-radius: 50px; */
-   
 }
-.navigation{
+
+.navigation {
     text-decoration: none;
     color: black;
 }
-.brother{
+
+.brother {
     display: flex;
     justify-content: center;
 }
-.item{
+
+.item {
     padding: 2px 33px;
     list-style: none;
     color: rgb(15, 1, 1);
-    
 }
-a:hover{
-    color: rgb(16, 154, 218);
+
+a:hover {
+    color: white;
     text-decoration: underline;
-    
 }
-.Section
-{
+
+.Section {
     background: url("/img/back-img.jpg") no-repeat center center/cover;
     border: 2px solid red;
     height: 358px;
     padding-right: 55px;
     padding-top: 55px;
     background-repeat: no-repeat;
-    
 }
-.heading{
+
+.heading {
     font-size: 28px;
 }
-.h2{
+
+.h2 {
     padding-top: 3px;
     line-height: 1.8;
     margin-top: -14px;
     font-size: 32px;
     font-family: 'Baloo Tammudu 2', cursive;
 }
-.h1{
+
+.h1 {
     padding-bottom: 2px;
     margin-bottom: 3px;
     font-family: monospace;
 }
-.quote{
+
+.quote {
     padding-left: 1036px;
-    
 }
-.part4{
+
+.part4 {
     display: flex;
-    border: 2px solid red;
+    border: 2px solid rgb(179, 117, 117);
     padding: 28px 3px;
     margin: 118px;
-    background-color: tomato;
+    background-color: rgb(179, 117, 117);
     flex-wrap: wrap;
 }
 
-.part4-body{
-    padding-left: 265px;
-    
+.part4-body {
+    padding-left: 83px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
 }
-.create{
-    padding-left: 200px;
+
+.create {
+    padding-left: 169px;
 }
-.name2{
-    padding-left: 107px;
-    font-family: cursive;
+
+.name2 {
+    padding-left: 72px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
 }
-#submit-button{
-    border-radius: 5px;
-    border: 2px solid red;
-    color: salmon;
+
+#submit-button {
+    border-radius: 20px;
+    border: 2px solid rgb(122, 78, 78);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    font-size: 16px;
+    box-shadow: 2px 4px 4px rgb(143, 83, 83);
 }
-#submit-button:hover{
-    color: skyblue;
+
+#submit-button:hover {
+    color: black;
+    cursor: pointer;
+    background-color: rgb(177, 163, 163);
+}
+
+select {
+    cursor: pointer;
+    font-family: auto;
+    font-size: 16px;
+    color: black;
+    background-color: white;
+    border-radius: 7px;
+}
+
+.email {
+    padding-left: 60px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
     cursor: pointer;
 }
-select{
-    cursor: pointer;
-    font-family: cursive;
-    color: teal;
-    background-color: violet;
+
+#email1 {
+    border-radius: 7px;
+}
+
+#name {
+    border-radius: 7px;
 }
