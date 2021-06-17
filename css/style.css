@@ -15,34 +15,39 @@ header {
     width: 100%;
 }
 
-.brocode {
-    font-family: cursive;
-    text-align: center;
-    list-style: none;
-}
-
-.baarish:nth-child(2) {
-    color: blue;
-}
-
-.baarish span:nth-child(2n+1) {
-    color: blue;
-}
-
 .part3 {
     height: 100%;
     width: 100%;
-    border: 2px solid red;
-    background: url("https://source.unsplash.com/random") no-repeat center center/cover;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-#part3-head {
-    text-align: center;
-    text-decoration: underline;
-    padding-left: 30px;
-    border: orangered;
-    font-size: 3rem;
-    margin-top: 2px;
+.flip {
+    height: 200px;
+    width: 200px;
+    padding: 2px;
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: purple;
+    border-radius: 25px;
+    flex-basis: 292px;
+    box-shadow: 2px 2px 2px 2px red;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.7s;
+}
+
+.flip:hover {
+    color: red;
+    background-color: pink;
+    height: 210px;
+    width: 210px;
+    font-size: 40px;
 }
 
 .navbar {
