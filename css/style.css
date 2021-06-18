@@ -33,29 +33,34 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: purple;
+    background-color: rgb(153 249 236);
     border-radius: 25px;
     flex-basis: 292px;
-    box-shadow: 2px 2px 2px 2px red;
+    box-shadow: 2px 2px 2px 2px black;
     transition-property: all;
     transition-timing-function: ease-in-out;
     transition-duration: 0.7s;
+    font-family: cursive;
+    text-align: center;
 }
 
 .flip:hover {
-    color: red;
-    background-color: pink;
+    color: white;
+    background-color: rgb(39 35 35);
     height: 210px;
     width: 210px;
-    font-size: 40px;
+    font-size: 25px;
 }
 
 .navbar {
     border: rgb(179, 117, 117);
-    background-color: rgb(179, 117, 117);
+    background-color: rgb(58 251 225);
+    background-image: linear-gradient(to right, rgba(17, 15, 3, 0), rgb(48 61 175));
     padding: 2px 3px;
     /* border-radius: 50px; */
     /* z-index: 2; */
+    font-family: "Open Sans", sans-serif;
+    color: #444444;
 }
 
 .navigation {
@@ -84,7 +89,7 @@ a:hover {
 }
 
 .Section {
-    background: url("/img/back-img.jpg") no-repeat center center/cover;
+    background-image: linear-gradient(to left, rgb(151 151 151), rgb(235 235 243));
     /* border: 2px solid red; */
     height: 358px;
     padding-right: 55px;
@@ -100,35 +105,39 @@ a:hover {
     padding-top: 3px;
     line-height: 1.8;
     margin-top: -14px;
-    font-size: 32px;
-    font-family: 'Baloo Tammudu 2', cursive;
+    font-size: 27px;
+    font-family: 'Righteous', cursive;
+    padding-right: 151px
 }
 
 .h1 {
     padding-bottom: 2px;
     margin-bottom: 3px;
-    font-family: monospace;
-    text-shadow: 1px 1px 2px red;
+    font-family: 'Righteous', cursive;
+    text-shadow: 1px 1px 2px #3dc6b3;
+    padding-right: 198px;
 }
 
 .quote {
-    padding-left: 1036px;
+    padding-left: 858px;
 }
 
 .part4 {
     display: flex;
-    border: 2px solid rgb(179, 117, 117);
+    /* border: 2px solid rgb(179, 117, 117); */
     padding: 28px 3px;
     margin: 118px;
-    background-color: rgb(179, 117, 117);
+    background-color: rgb(39 35 35);
     flex-wrap: wrap;
-    box-shadow: -4px -2px 180px 50px red;
+    box-shadow: rgb(71 183 158) -4px 22px 34px 6px;
+    border-radius: 7px;
 }
 
 .part4-body {
     padding-left: 83px;
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
+    color: white;
 }
 
 .create {
@@ -139,6 +148,7 @@ a:hover {
     padding-left: 72px;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
+    color: white;
 }
 
 #submit-button {
@@ -151,7 +161,7 @@ a:hover {
     transition-property: all;
     transition-timing-function: ease-in-out;
     transition-duration: 0.5s;
-    box-shadow: 0px 0px 0px 2px purple;
+    box-shadow: 0px 0px 0px 2px;
 }
 
 #submit-button:hover {
@@ -182,6 +192,7 @@ a:hover {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     cursor: pointer;
+    color: white;
 }
 
 #email1 {
@@ -214,28 +225,28 @@ a:hover {
     top: 82px;
     left: 24px;
     animation-name: Book;
-    animation-duration: 2s;
+    animation-duration: 0.2s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     animation-delay: 1s;
-    width: 50%;
+    width: 28%;
 }
 
 @keyframes Book {
     0% {
-        top: 82px;
+        right: 23px;
         left: 24px;
     }
     25% {
-        top: 90px;
+        right: 90px;
         left: 30px;
     }
     50% {
-        top: 100px;
+        right: 100px;
         left: 35px;
     }
     100% {
-        top: 82px;
+        right: 23px;
         left: 24px;
     }
 }
