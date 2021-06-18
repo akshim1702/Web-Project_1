@@ -1,64 +1,25 @@
+/* Css reset */
+
 body {
     height: 100%;
     width: 100%;
     margin: 0%;
 }
 
+
+/* Navigation Section  */
+
 header {
-    display: block;
     position: fixed;
     width: 100%;
     z-index: 2;
 }
 
-.container {
-    width: 100%;
-}
-
-.part3 {
-    height: 100%;
-    width: 100%;
-    /* border: 2px solid red; */
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.flip {
-    height: 200px;
-    width: 200px;
-    padding: 2px;
-    margin: 2px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(153 249 236);
-    border-radius: 25px;
-    flex-basis: 292px;
-    box-shadow: 2px 2px 2px 2px black;
-    transition-property: all;
-    transition-timing-function: ease-in-out;
-    transition-duration: 0.7s;
-    font-family: cursive;
-    text-align: center;
-}
-
-.flip:hover {
-    color: white;
-    background-color: rgb(39 35 35);
-    height: 210px;
-    width: 210px;
-    font-size: 25px;
-}
-
-.navbar {
+#navbar {
     border: rgb(179, 117, 117);
     background-color: rgb(58 251 225);
     background-image: linear-gradient(to right, rgba(17, 15, 3, 0), rgb(48 61 175));
     padding: 2px 3px;
-    /* border-radius: 50px; */
-    /* z-index: 2; */
     font-family: "Open Sans", sans-serif;
     color: #444444;
 }
@@ -66,17 +27,6 @@ header {
 .navigation {
     text-decoration: none;
     color: black;
-}
-
-.brother {
-    display: flex;
-    justify-content: center;
-}
-
-.item {
-    padding: 2px 33px;
-    list-style: none;
-    color: rgb(15, 1, 1);
 }
 
 a {
@@ -87,6 +37,56 @@ a:hover {
     color: white;
     text-decoration: underline;
 }
+
+.item {
+    padding: 2px 33px;
+    list-style: none;
+    color: rgb(15, 1, 1);
+}
+
+.brother {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Section Part 2 Photo */
+
+.photo {
+    display: block;
+    position: absolute;
+    top: 82px;
+    left: 24px;
+    animation-name: Book;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    width: 28%;
+    margin: 25px;
+}
+
+@keyframes Book {
+    0% {
+        right: 23px;
+        left: 24px;
+    }
+    25% {
+        right: 90px;
+        left: 30px;
+    }
+    50% {
+        right: 100px;
+        left: 35px;
+    }
+    100% {
+        right: 23px;
+        left: 24px;
+    }
+}
+
+
+/* Section Part 2  */
 
 .Section {
     background-image: linear-gradient(to left, rgb(151 151 151), rgb(235 235 243));
@@ -107,22 +107,26 @@ a:hover {
     margin-top: -14px;
     font-size: 27px;
     font-family: 'Righteous', cursive;
-    padding-right: 151px
+    padding-right: 151px;
+    text-shadow: 1px 1px 2px #b62207;
 }
 
 .h1 {
     padding-bottom: 2px;
     margin-bottom: 3px;
     font-family: 'Righteous', cursive;
-    text-shadow: 1px 1px 2px #3dc6b3;
-    padding-right: 198px;
+    text-shadow: 1px 1px 2px #b62207;
+    padding-right: 151px;
 }
 
 .quote {
     padding-left: 858px;
 }
 
-.part4 {
+
+/* Section part 3 */
+
+.part3 {
     display: flex;
     /* border: 2px solid rgb(179, 117, 117); */
     padding: 28px 3px;
@@ -133,7 +137,7 @@ a:hover {
     border-radius: 7px;
 }
 
-.part4-body {
+.part3-body {
     padding-left: 83px;
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
@@ -219,34 +223,42 @@ a:hover {
     cursor: pointer;
 }
 
-.photo {
-    display: block;
-    position: absolute;
-    top: 82px;
-    left: 24px;
-    animation-name: Book;
-    animation-duration: 0.2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    animation-delay: 1s;
-    width: 28%;
+
+/* Section Part 4 */
+
+.part4 {
+    height: 100%;
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-@keyframes Book {
-    0% {
-        right: 23px;
-        left: 24px;
-    }
-    25% {
-        right: 90px;
-        left: 30px;
-    }
-    50% {
-        right: 100px;
-        left: 35px;
-    }
-    100% {
-        right: 23px;
-        left: 24px;
-    }
+.flip {
+    height: 200px;
+    width: 200px;
+    padding: 2px;
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(153 249 236);
+    border-radius: 25px;
+    flex-basis: 292px;
+    box-shadow: 2px 2px 2px 2px black;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.7s;
+    font-family: cursive;
+    text-align: center;
+}
+
+.flip:hover {
+    color: white;
+    background-color: rgb(39 35 35);
+    height: 210px;
+    width: 210px;
+    font-size: 25px;
 }
