@@ -1,12 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Time Table</title>
+    <link rel="icon" href="/img/5-red-book-png-image-image.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/next.css">
 </head>
+
 <body>
-    
+
+    <div id="head">
+        <h1>
+            Time Table
+        </h1>
+    </div>
+
+    <div class="container">
+        <nav id="navbar">
+            <ul>
+                <li class="item"> <a href="#" target="_blank">Home</a></li>
+                <li class="item"><a href="#" target="_blank">About us</a></li>
+                <li class="item"><a href="#" target="_blank">Services</a></li>
+                <li class="item"><a href="#" target="_blank">Contact us</a></li>
+            </ul>
+        </nav>
+        <section id="section">
+            <!-- <label for="Row">No. of Rows : </label>
+                <input type="number" name="Row" id="Row"> -->
+
+            <label for="Columns">No. of Coloumns : </label>
+            <input type="number" name="Columns" id="Columns">
+
+            <input type="button" onClick="TakeInput()" value="submit">
+        </section>
+        <div id="timeTable">
+            <table id="content">
+                <thead>
+                    <tr>
+                        <th class="tableClass">Days/Time</th>
+                        <th class="tableClass">Monday</th>
+                        <th class="tableClass">Tuesday</th>
+                        <th class="tableClass">wednesday</th>
+                        <th class="tableClass">Thursday</th>
+                        <th class="tableClass">friday</th>
+                        <th class="tableClass">saturday</th>
+                    </tr>
+                    <tbody id="myTable">
+
+                    </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="./javascript/next.js"></script>
+
 </body>
+
 </html>
