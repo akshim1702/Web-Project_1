@@ -1,39 +1,68 @@
-// function TakeInput() {
-//     // let pet = "";
-//     let input = document.getElementById('Columns').value;
-//     console.log(input);
-//     // for (let index = 0; index < 7; index++) {
+// Function for taking input and printing rows 
 
-
-//     for (let index = 0; index < input; index++) {
-//         // const print = pet;
-//         // document.write(print);
-//         // innerHTML = pet;
-//         // pet = '<td>' + '<input type="text" name="" id="">' + '</td>';
-//         console.log(index);
-
-//         document.getElementsByClassName("ef").innerHTML = '<td><input type="text" name = ""></td>';
-//     }
-// }
-// // }
 
 function TakeInput() {
+    let input = document.getElementById('Columns').value;
+    let table = document.getElementById("myTable");
 
-    var table = document.getElementById("myTable");
+    if (input <= 20) {
+        for (let i = 0; i < input; i++) {
+
+            let row = table.insertRow(i);
+
+            for (let index = 0; index <= 6; index++) {
+
+                let cell = new Array(index);
+                cell = row.insertCell(index);
+                cell.innerHTML = '<td><input type="text" name = ""></td>';
+
+            }
+        }
+
+    } else {
+        alert("cannot add rows more than 20 on a single count");
+    }
+}
+// inserting a single row 
+
+function add() {
+    let table = document.getElementById("myTable");
     let row = table.insertRow(0);
+    for (let index = 0; index <= 6; index++) {
 
-    let cell0 = row.insertCell(0);
-    let cell1 = row.insertCell(1);
-    let cell2 = row.insertCell(2);
-    let cell3 = row.insertCell(3);
-    let cell4 = row.insertCell(4);
-    let cell5 = row.insertCell(5);
-    let cell6 = row.insertCell(6);
-    cell1.innerHTML = '<td><input type="text" name = ""></td>';
-    cell2.innerHTML = '<td><input type="text" name = ""></td>';
-    cell0.innerHTML = '<td><input type="text" name = ""></td>';
-    cell3.innerHTML = '<td><input type="text" name = ""></td>';
-    cell4.innerHTML = '<td><input type="text" name = ""></td>';
-    cell5.innerHTML = '<td><input type="text" name = ""></td>';
-    cell6.innerHTML = '<td><input type="text" name = ""></td>';
+        let cell = new Array(index);
+        cell = row.insertCell(index);
+        cell.innerHTML = '<td><input type="text" name = ""></td>';
+
+    }
+}
+
+
+// delete single row 
+function delete5() {
+
+    var table = document.getElementById('myTable');
+    var rowCount = table.rows.length;
+    console.log(rowCount);
+    let i = 0;
+    if (i == 0) {
+        table.deleteRow(0);
+        i++;
+
+    }
+}
+
+// Deleting all the rows
+
+function delete6() {
+    var table = document.getElementById('myTable');
+    var rowCount = table.rows.length;
+
+    confirm("Are you sure? You are going to delete all the rows");
+    for (var i = 0; i < rowCount; i++) {
+        var row = table.rows[i];
+        table.deleteRow(i);
+        rowCount--;
+        i--;
+    }
 }
