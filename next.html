@@ -8,6 +8,9 @@
     <title>Time Table</title>
     <link rel="icon" href="/img/5-red-book-png-image-image.png" type="image/x-icon">
     <link rel="stylesheet" href="css/next.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -21,34 +24,80 @@
     <div class="container">
         <nav id="navbar">
             <ul>
-                <li class="item"> <a href="#" target="_blank">Home</a></li>
+                <li class="item"> <a href="p1.html">Home</a></li>
                 <li class="item"><a href="#" target="_blank">About us</a></li>
                 <li class="item"><a href="#" target="_blank">Services</a></li>
                 <li class="item"><a href="#" target="_blank">Contact us</a></li>
             </ul>
         </nav>
+
         <section id="section">
-            <!-- <label for="Row">No. of Rows : </label>
-                <input type="number" name="Row" id="Row"> -->
 
-            <label for="Columns">No. of Coloumns : </label>
-            <input type="number" name="Columns" id="Columns">
+            <div class="rowdiv">
+                <label for="Row">  </label>
+                <input type="number" name="Row" id="Row">
+            </div>
 
-            <input type="button" onClick="TakeInput()" value="submit">
+            <input type="button" id="button1" onClick="TakeInput()" class="utility" value="Add Row">
+
+            <div class="coldiv">
+                <label for="deleter"></label>
+                <input type="number" name="deleter" id="deleter">
+            </div>
+
+            <input type="button" id="button2" onClick="deleteRow()" class="utility" value="Delete Row">
+
+
+            <input type="button" id="addR" onClick="add()" class="utility" value=" + ">
+
+
+
+            <input type="button" id="addC" onClick="delete5()" class="utility" value=" - ">
+
+
+
+            <input type="button" id="deleteall" onClick="delete6()" class="utility" value="Delete All">
+
+
         </section>
+
         <div id="timeTable">
             <table id="content">
                 <thead>
                     <tr>
-                        <th class="tableClass">Days/Time</th>
+                        <th class="tableClass">TIME</th>
                         <th class="tableClass">Monday</th>
                         <th class="tableClass">Tuesday</th>
-                        <th class="tableClass">wednesday</th>
+                        <th class="tableClass">Wednesday</th>
                         <th class="tableClass">Thursday</th>
-                        <th class="tableClass">friday</th>
-                        <th class="tableClass">saturday</th>
+                        <th class="tableClass">Friday</th>
+                        <th class="tableClass">Saturday</th>
                     </tr>
                     <tbody id="myTable">
+                        <tr>
+                            <td>
+                                <input type="time" class="time-period1" name="">
+                                <input type="time" class="time-period12" name="">
+                            </td>
+                            <td>
+                                <input type="text" name="">
+                            </td>
+                            <td>
+                                <input type="text" name="">
+                            </td>
+                            <td>
+                                <input type="text" name="">
+                            </td>
+                            <td>
+                                <input type="text" name="">
+                            </td>
+                            <td>
+                                <input type="text" name="">
+                            </td>
+                            <td>
+                                <input type="text" name="">
+                            </td>
+                        </tr>
 
                     </tbody>
             </table>
