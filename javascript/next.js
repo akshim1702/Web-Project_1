@@ -1,10 +1,10 @@
 //taking name and displaying on top
 
-// let space = " ";
-// let n = prompt('Enter your name', 'enter full name') + space;
-// let position = n.slice(0, n.indexOf(' '));
+ let space = " ";
+ let n = prompt('Enter your name', 'enter full name') + space;
+ let position = n.slice(0, n.indexOf(' '));
 
-// document.getElementById('head').innerHTML = "<h1>" + position + "'s" + " Time Table" + "</h1>";
+ document.getElementById('head').innerHTML = "<h1>" + position + "'s" + " Time Table" + "</h1>";
 
 function TakeInput() {
 
