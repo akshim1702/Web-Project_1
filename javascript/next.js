@@ -85,15 +85,21 @@ function delete6() {
     var table = document.getElementById('myTable');
     var rowCount = table.rows.length;
 
-    confirm("Are you sure? You want to delete all the rows");
-    for (var i = 0; i < rowCount; i++) {
-        if (i == 0) {
-            alert("Last row cannot be deleted");
-        } else {
-            var row = table.rows[i];
-            table.deleteRow(i);
-            rowCount--;
-            i--;
+    check = confirm("Are you sure? You want to delete all the rows");
+    console.log(check);
+    if (check == true) {
+        for (var i = 0; i < rowCount; i++) {
+            if (i == 0) {
+                alert("Last row cannot be deleted");
+            } else {
+                var row = table.rows[i];
+                console.log(row);
+                table.deleteRow(i);
+                rowCount--;
+                i--;
+            }
         }
+    } else {
+        alert("no rows has been deleted");
     }
 }
