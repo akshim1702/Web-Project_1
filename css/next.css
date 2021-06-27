@@ -46,7 +46,7 @@
 #navbar {
     display: grid;
     grid-area: navbar;
-    width: 200px;
+    width: 250px;
     height: auto;
     background-color: black;
 }
