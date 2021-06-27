@@ -71,11 +71,12 @@ function delete5() {
     var table = document.getElementById('myTable');
     var rowCount = table.rows.length;
     console.log(rowCount);
-    let i = 1;
-    if (i == 1) {
+    if (rowCount != 1) {
         table.deleteRow(1);
         i++;
 
+    } else if (rowCount = 1) {
+        alert("Last row cannot be deleted");
     }
 }
 // Deleting all the rows
