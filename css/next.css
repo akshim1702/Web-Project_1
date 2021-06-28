@@ -17,8 +17,9 @@
     font-size: 25px;
     /* margin: 5px; */
     text-decoration: underline;
-    text-shadow: #da1919 1px 0px 10px;
-    color: #da1919;
+    padding-right: 129px;
+    text-shadow: #ebcdcd 1px 0px 10px;
+    color: #000000;
 }
 
 
@@ -65,13 +66,23 @@
 
 .item>a {
     width: 100%;
-    color: white;
+    color: #998b8b;
     text-decoration: none;
 }
 
 .item:hover {
     cursor: pointer;
     background-color: rgb(39 35 35);
+    /* color: white; */
+    transition: all 0.9s ease-in-out;
+}
+
+a {
+    transition: all 1s ease-in-out;
+}
+
+a:hover {
+    color: white;
 }
 
 
@@ -113,7 +124,6 @@
     box-shadow: 0px 0px 0px 2px;
     padding: 6px;
 }
-
 #button:hover {
     color: black;
     cursor: pointer;
@@ -125,7 +135,7 @@
     transition-property: all;
     transition-timing-function: ease-in-out;
     transition-duration: 0.5s;
-    padding-right: 287px;
+    padding-left: 787px;
     margin: -24px;
 }
 
@@ -141,7 +151,7 @@
     transition-duration: 0.5s;
     margin: 24px;
     margin-bottom: -27px;
-    padding-right: 287px
+    padding-left: 787px;
 }
 
 .coldiv:hover {
@@ -150,18 +160,20 @@
 }
 
 #addR {
-    margin-right: 334px;
+    margin-right: 351px;
     margin-top: 16px;
 }
 
 #addC {
-    margin-right: 218px;
-    margin-top: -34px;
+    margin-right: 230px;
+    margin-top: -36px;
 }
 
 #deleteall {
-    margin: 28px;
     margin-right: 294px;
+    margin-top: 26px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 
@@ -237,12 +249,13 @@
     transition-duration: 0.5s;
     box-shadow: 0px 0px 0px 2px;
     padding: 6px;
+    margin-left: 1086px;
 }
 
 .utility:hover {
     color: black;
     cursor: pointer;
-    background-color: rgb(58 251 225);
+    background-color: rgb(118 149 227);
 }
 
 .time-period1 {
