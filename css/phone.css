@@ -1,0 +1,52 @@
+/* CSs reset  */
+
+* {}
+
+
+/* body */
+
+body {
+    /* background-color: red; */
+}
+
+
+/* head  */
+
+#head {
+    width: 1175px;
+}
+
+
+/* navbar  */
+
+#navbar {
+    /* display: none; */
+    /* width: 0px; */
+    animation: key1 0.8s ease-in-out 0s 1 forwards;
+}
+
+.item {
+    display: none;
+}
+
+#timeTable {
+    animation: key2 0.8s ease-in-out 0s 1 forwards;
+}
+
+@keyframes key1 {
+    0% {
+        width: 250px;
+    }
+    100% {
+        width: 0px;
+    }
+}
+
+@keyframes key2 {
+    0% {
+        padding: 249px;
+    }
+    100% {
+        padding: 0px;
+    }
+}
